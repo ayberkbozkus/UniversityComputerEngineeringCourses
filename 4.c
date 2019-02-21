@@ -18,26 +18,26 @@ int main ()
 		}
 		if ( (tempature > 0) && (tempature <100) )
 		{
-			printf("Water is Liquid at %.2lf degrees Celsius\n ", tempature );
+			printf("Water is Liquid at %.2lf degrees Celsius\n ", tempature);
 		}
 		if (tempature >= 100)
 		{
-			printf("Water is Gas at %.2lf degrees Celsius\n", );
+			printf("Water is Gas at %.2lf degrees Celsius\n", tempature);
 		}
 	}
 		if (unit == 'F')
 	{
 		if (tempature <= 32)
 		{
-			printf("Water is solid (Ice) at %.2lf degrees Celsius \n", tempature);
+			printf("Water is solid (Ice) at %.2lf degrees Fahrenheit \n", tempature);
 		}
-		if ( (tempature > 32) && (tempature <180) )
+		if ( (tempature > 32) && (tempature <212) )
 		{
-			printf("Water is Liquid at %.2lf degrees Celsius\n ", tempature );
+			printf("Water is Liquid at %.2lf degrees Fahrenheit\n ", tempature);
 		}
-		if (tempature >= 180)
+		if (tempature >= 212)
 		{
-			printf("Water is Gas at %.2lf degrees Celsius\n", );
+			printf("Water is Gas at %.2lf degrees Fahrenheit\n", tempature);
 		}
 	}
 	return EXIT_SUCCESS;
