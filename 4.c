@@ -10,35 +10,33 @@ int main ()
 	scanf("%lf %c", &tempature, &unit);
 	// double x = 0.0; -> assigment operator
 	// == -> comparision operator
+	
 	if (unit == 'C')
 	{
-		if (tempature <= 0)
-		{
-			printf("Water is solid (Ice) at %.2lf degrees Celsius \n", tempature);
-		}
-		else if ( (tempature > 0) && (tempature <100) )
-		{
-			printf("Water is Liquid at %.2lf degrees Celsius \n", tempature);
-		}
-		else
-		{
-			printf("Water is Gas at %.2lf degrees Celsius \n", tempature);
-		}
+		celcius = tempature
 	}
-	if (unit == 'F')
+	else if (unit == 'F')
 	{
-		if (tempature <= 32)
+		celcius = (0.5 / 0.9) * (tempature - 32)
+	}
+	else
+	{
+		printf("Please enter tempature unit as either C or F. \n")
+		return EXIT_FAILURE;
+	}
+
+
+		if (celcius <= 0)
 		{
-			printf("Water is solid (Ice) at %.2lf degrees Fahrenheit \n", tempature);
+			printf("Water is solid (Ice) at %.2lf degrees %s \n", tempature, unit =='C' ? "Celcius" : "Fahrenheit");
 		}
-		else if ( (tempature > 32) && (tempature <180) )
+		else if ( celcius <100 )
 		{
-			printf("Water is Liquid at %.2lf degrees Fahrenheit \n", tempature);
+			printf("Water is Liquid at %.2lf degrees %s \n ", tempature, unit =='C' ? "Celcius" : "Fahrenheit");
 		}
 		else
 		{
-			printf("Water is Gas at %.2lf degrees Fahrenheit \n", tempature);
+			printf("Water is Gas at %.2lf degrees %s \n", tempature, unit =='C' ? "Celcius" : "Fahrenheit");
 		}
-	}
 	return EXIT_SUCCESS;
 }
