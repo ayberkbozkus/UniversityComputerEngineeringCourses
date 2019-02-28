@@ -12,3 +12,4 @@ Projects
 3. Body surface calculator
 4. Water state calculator
 5. Monte Hall Paradox
+6. Newton Raphsons
