@@ -13,3 +13,4 @@ Projects
 4. Water state calculator
 5. Monte Hall Paradox
 6. Newton Raphsons
+7. Bubblesort
